@@ -5,7 +5,7 @@ export default function FriendsList({ friends }) {
     <ul class="friend-list">
       {friends.default.map((el) => (
         <li key={el.id} class="item">
-          <span class="status">{el.isOnline}</span>
+          <span class="status">{el.isOnline && "Online"}</span>
           <img class="avatar" src={el.avatar} alt="" width="48" />
           <p class="name">{el.name}</p>
         </li>
