@@ -1,9 +1,7 @@
-# React Course 1-st homework
+# React Course 1-st homework ʕง•ᴥ•ʔง
 
-## components and collections ʕง•ᴥ•ʔง
+𓏲 𓏲 components and collections 𓏲 𓏲
 
-𓏧 𓏲 𓏲 𓏲 [TASK](https://github.com/goitacademy/react-homework/tree/master/homework-01) 𓏲 𓏲 𓏲 𓏧
+## 𓏧 𓏲 𓏲 𓏲 [TASK](https://github.com/goitacademy/react-homework/tree/master/homework-01) 𓏲 𓏲 𓏲 𓏧
 
-### Getting Started with Create React App ʕᴥ·　 ʔ
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App ʕᴥ·　 ʔ](https://github.com/facebook/create-react-app).
