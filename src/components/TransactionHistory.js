@@ -12,7 +12,7 @@ export default function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items.default.map((el) => (
+        {items.map((el) => (
           <tr key={el.id}>
             <td>{el.type}</td>
             <td>{el.amount}</td>
@@ -24,4 +24,8 @@ export default function TransactionHistory({ items }) {
   );
 }
 
-TransactionHistory.prototypes = { items: PropTypes.object.isRequired };
+TransactionHistory.prototypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.string.isRequired })
+  ),
+};

@@ -5,8 +5,8 @@ export default function Statistics({ stats, title }) {
     <section class="statistics">
       {title && <h2 class="title">Upload stats</h2>}
       <ul class="stat-list">
-        {stats.default.map((el) => (
-          <li class="item">
+        {stats.map((el) => (
+          <li key={el.id} class="item">
             <span class="label">{el.label}</span>
             <span class="percentage">{el.percentage}</span>
           </li>
@@ -18,5 +18,7 @@ export default function Statistics({ stats, title }) {
 
 Statistics.propTypes = {
   title: PropTypes.bool,
-  stats: PropTypes.object,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.string.isRequired })
+  ),
 };

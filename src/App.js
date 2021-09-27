@@ -1,18 +1,18 @@
 import Profile from "./components/Profile";
-import * as user from "./user.json";
+import user from "./user.json";
 
 import Statistics from "./components/Statistics";
-import * as statisticalData from "./statistical-data.json";
+import statisticalData from "./statistical-data.json";
 
 import FriendsList from "./components/FriendList";
-import * as friends from "./friends";
+import friends from "./friends";
 
-import * as transactions from "./transactions.json";
+import transactions from "./transactions.json";
 import TransactionHistory from "./components/TransactionHistory";
 
 export default function App() {
-  const allInOne =
-    ((
+  return (
+    <div>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -20,10 +20,9 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-    ),
-    (<Statistics title={true} stats={statisticalData} />),
-    (<FriendsList friends={friends} />),
-    (<TransactionHistory items={transactions} />));
-
-  return allInOne;
+      <Statistics title={true} stats={statisticalData} />
+      <FriendsList friends={friends} />
+      <TransactionHistory items={transactions} />
+    </div>
+  );
 }
