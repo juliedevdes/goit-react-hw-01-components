@@ -7,10 +7,12 @@ import * as statisticalData from "./statistical-data.json";
 import FriendsList from "./components/FriendList";
 import * as friends from "./friends";
 
+import * as transactions from "./transactions.json";
+import TransactionHistory from "./components/TransactionHistory";
+
 export default function App() {
-  return (
-    <Statistics title={true} stats={statisticalData} /> +
-    (
+  const allInOne =
+    ((
       <Profile
         name={user.name}
         tag={user.tag}
@@ -19,6 +21,9 @@ export default function App() {
         stats={user.stats}
       />
     ),
-    (<FriendsList friends={friends} />)
-  );
+    (<Statistics title={true} stats={statisticalData} />),
+    (<FriendsList friends={friends} />),
+    (<TransactionHistory items={transactions} />));
+
+  return allInOne;
 }

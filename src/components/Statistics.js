@@ -18,4 +18,5 @@ export default function Statistics({ stats, title }) {
 
 Statistics.propTypes = {
   title: PropTypes.bool,
+  stats: PropTypes.object,
 };
