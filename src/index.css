@@ -1,13 +1,9 @@
 @import-normalize;
 :root {
   --main-color: #212121;
-  --second-color: #757575;
-  --accent-color: #2196f3;
-  --background-color-dark: #2f303a;
+  --gray: #616161;
   --background-color-soft-gray: #f5f4fa;
-  --white-font: #ffffff;
-  --black-font: #000000;
-  --icon-color: #afb1b8;
+  --box-sh: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 h1,

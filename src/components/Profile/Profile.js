@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./Profile.scss";
 
 export default function Profile({ avatar, name, tag, stats, location }) {
   return (
