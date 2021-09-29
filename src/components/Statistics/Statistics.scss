@@ -1,0 +1,26 @@
+.statistics {
+  padding-top: 50px;
+  & .title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  & .stat-list {
+    display: flex;
+    justify-content: space-around;
+    & .item {
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: cadetblue;
+      display: flex;
+      flex-direction: column;
+      & .percentage {
+        margin-top: 5px;
+        &::after {
+          content: "%";
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}

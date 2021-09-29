@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./TransactionHistory.scss";
 
 export default function TransactionHistory({ items }) {
   return (
