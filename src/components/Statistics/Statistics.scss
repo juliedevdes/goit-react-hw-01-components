@@ -1,13 +1,18 @@
 .statistics {
   padding-top: 50px;
+
   & .title {
     margin-bottom: 20px;
-    text-align: center;
+    text-align: start;
   }
   & .stat-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+
     & .item {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
       color: white;
       padding: 20px;
       border-radius: 5px;
